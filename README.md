@@ -1,7 +1,7 @@
-# API Library + Interface
+# Expertsoft
 
 This project is an application for:
-- Managing clients of the Expertsof company (CRUD).
+- Managing clients of the Expertsoft company (CRUD).
 - Populating the database with a manually formatted CSV file.
 
 ---
@@ -178,5 +178,6 @@ JOIN clients c ON t.id_client = c.id_client
 JOIN bills b ON t.id_bill = b.id_bill
 WHERE p.platform = 'Nequi'
 ORDER BY t.date_transaction DESC;
+
 
 
