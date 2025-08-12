@@ -1,4 +1,4 @@
-# Expertsoft
+Expertsoft
 
 This project is an application for:
 - Managing clients of the Expertsoft company (CRUD).
@@ -6,7 +6,7 @@ This project is an application for:
 
 ---
 
-## Prerequisites
+Prerequisites
 
 You must have installed:
 
@@ -15,7 +15,7 @@ You must have installed:
 
 ---
 
-## Installation and Configuration
+Installation and Configuration
 In the project folder, run the following command to install the nodejs dependencies.
 
 **npm install**
@@ -178,6 +178,3 @@ JOIN clients c ON t.id_client = c.id_client
 JOIN bills b ON t.id_bill = b.id_bill
 WHERE p.platform = 'Nequi'
 ORDER BY t.date_transaction DESC;
-
-
-
