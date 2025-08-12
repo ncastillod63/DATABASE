@@ -6,7 +6,7 @@ This project is an application for:
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 You must have installed:
 
@@ -15,7 +15,7 @@ You must have installed:
 
 ---
 
-## ⚙️ Installation and Configuration
+## Installation and Configuration
 In the project folder, run the following command to install the nodejs dependencies.
 
 **npm install**
@@ -42,7 +42,7 @@ The system allows administrators, financial managers, and analysts to track reve
 
 ---
 
-🗄 Database Structure
+Database Structure
 
 1. clients
 
@@ -109,7 +109,7 @@ id_bill     VARCHAR(20) References bills(id_bill).
 
 ---
 
-🔗 Relationships
+Relationships
 
 One client → can have multiple bills and transactions.
 
@@ -123,7 +123,7 @@ One transaction → belongs to exactly one client, one bill, and one platform.
 
 ---
 
-📊 Example Queries
+Example Queries
 
 1. Total amount paid per client
 
@@ -178,4 +178,5 @@ JOIN clients c ON t.id_client = c.id_client
 JOIN bills b ON t.id_bill = b.id_bill
 WHERE p.platform = 'Nequi'
 ORDER BY t.date_transaction DESC;
+
 
